@@ -11,6 +11,10 @@
   },
   "scripts": {
     "build:css": "sass --quiet-deps src/scss/main.scss docs/css/main.css",
-    "watch:css": "sass --quiet-deps --watch src/scss:docs/css"
+    "watch:css": "sass --quiet-deps --watch src/scss:docs/css",
+    "dev": "browser-sync start --server docs --files 'docs/**/*' --no-notify --no-open"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4"
   }
 }
